@@ -8,9 +8,9 @@ def print_hello():
 
 with DAG(
     dag_id="hello_world_dag",
-    start_date=datetime(2025, 1, 1),
-    schedule_interval="@daily",
-    catchup=False,
+    start_date=datetime(2026, 7, 19),
+    schedule="@hourly",
+    catchup=True,
     tags=["example", "learning"],
 ) as dag:
 
