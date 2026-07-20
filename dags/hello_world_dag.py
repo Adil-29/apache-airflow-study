@@ -7,7 +7,8 @@ def print_context(**context):
     print("Run ID:", context["run_id"])
     print("Task ID:", context["task"].task_id)
     print("DAG ID:", context["dag"].dag_id)
-    print("Execution Date (ds):", context["ds"])
+    print("Execution Date (ds):", context["ds"]
+          )
 
 with DAG(
     dag_id="hello_world_dag",
@@ -20,3 +21,4 @@ with DAG(
         task_id="hello_task",
         python_callable=print_context,
     )
+    #please check the code and let me know if you need any modifications or explanations.
