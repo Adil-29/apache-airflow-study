@@ -8,3 +8,4 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: false
     volumes:
       - ./dags:/opt/airflow/dags
+      - C:\Users\pc\airflow_data:/opt/airflow/airflow_data
